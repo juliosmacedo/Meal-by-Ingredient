@@ -7,6 +7,7 @@ app.appendChild(container)
 const select = document.getElementById('ingredients');
 const mealList = document.getElementById('mealList');
 const get_meal_btn = document.getElementById('gobtn');
+const chooseRecipeText = document.getElementById('h3');
 
 
 request.open('GET', 'https://www.themealdb.com/api/json/v1/1/list.php?i=list', true)
@@ -62,9 +63,11 @@ get_meal_btn.addEventListener('click', () => {
     var data = JSON.parse(this.response);
     
     if (request2.status >= 200 && request2.status < 400) {
+	  chooseRecipeText.style.display = 'flex'
       for (let i=0; i<data.meals.length; i++) {
-        mealOptions.push(`<button onclick="createMeal(${data.meals[i].idMeal})">${data.meals[i].strMeal}</button>`)
+        mealOptions.push(`<button class="recipeButton" onclick="createMeal(${data.meals[i].idMeal})">${data.meals[i].strMeal}</button>`)
         console.log(mealOptions)
+
     }
     } else {
       const errorMessage = document.createElement('marquee')
@@ -103,15 +106,18 @@ function createMeal(meal) {
 			<div class="columns five">
         <h1>${meal.strMeal}</h1>
 				<img src="${meal.strMealThumb}" alt="Meal Image">
+				<div class='pwrapper'>
 				${meal.strCategory ? `<p><strong>Category:</strong> ${meal.strCategory}</p>` : ''}
 				${meal.strArea ? `<p><strong>Area:</strong> ${meal.strArea}</p>` : ''}
 				${meal.strTags ? `<p><strong>Tags:</strong> ${meal.strTags.split(',').join(', ')}</p>` : ''}
+				</div>
 				<h5>Ingredients:</h5>
 				<ul>
 					${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
 				</ul>
 			</div>
 			<div class="columns seven">
+			<h5>Instructions:</h5>
 				<p>${meal.strInstructions}</p>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 #root {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 3rem auto;
     font-family: 'Montserrat';
   }
 
@@ -30,11 +30,10 @@
   }
 
   h3 {
+    font-family: 'Montserrat';
+    font-size: 2rem;
     margin: 1rem;
-    border: 1px solid gray;
-    border-radius: 25px;
-    background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -59,8 +58,8 @@
 
   h6 {
     font-family: 'Montserrat';
-    font-size: 3rem;
-    margin: 0.2rem;
+    font-size: 4rem;
+    margin: 1.5rem;
     text-align: center;
   }
 
@@ -80,11 +79,6 @@
     font-size: 2.1rem;
     margin: 0.2rem;
     text-align: center;
-  }
-
-  ul {
-    font-family: 'Montserrat';
-    font-size: 1rem;
   }
 
   h4 {
@@ -129,23 +123,33 @@
   button {
     font-family: 'Bebas Neue';
     font-size: 1.5em;
-    padding: 10px;
-    margin-left: 1rem;
+    padding: 0.8rem;
+    margin: 0.2rem;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #a87426;
   }
 
   label, input {
     font-family: 'Bebas Neue';
     font-size: 1.5em;
     padding: 10px;
+    line-height: 1.4rem;
   }
 
   .u-full-width {
-    width: 30vh;
-    box-sizing: border-box; }
+    font-family: 'Montserrat';
+    font-weight: bold;
+    width: 21vh;
+    box-sizing: border-box;
+    margin: 1rem;
   
+  }
 
+    
   @media only screen and (max-width: 500px) {
     .card {
       flex: 1 1 calc(50% - 2rem);
@@ -191,3 +195,62 @@
 body {
     background-color: #F6E6C0;
 }
+
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+.mealList {
+  text-align: center;
+  column-count: auto;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.recipeButton {
+  width: 20rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.pwrapper {
+  display: flex;
+  justify-content: center;
+}
+

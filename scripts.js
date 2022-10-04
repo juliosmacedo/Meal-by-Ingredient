@@ -65,7 +65,7 @@ get_meal_btn.addEventListener('click', () => {
     if (request2.status >= 200 && request2.status < 400) {
 	  chooseRecipeText.style.display = 'flex'
       for (let i=0; i<data.meals.length; i++) {
-        mealOptions.push(`<button class="recipeButton" onclick="createMeal(${data.meals[i].idMeal})">${data.meals[i].strMeal}</button>`)
+        mealOptions.push(`<button class="button-54" onclick="createMeal(${data.meals[i].idMeal})">${data.meals[i].strMeal}</button>`)
         console.log(mealOptions)
 
     }

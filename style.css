@@ -1,0 +1,193 @@
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+  }
+
+  h2 {
+    font-size: 3em;
+    font-family: 'Montserrat';
+    color: #2b2b2b;
+    text-align: center;
+    padding: 0px;
+    margin: 0.7em 0.1em 0.1em 0.1em;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .card {
+    margin: 1rem;
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    margin: 1rem;
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-left: 1px;
+    margin-block-end: auto
+  }
+
+
+  img {
+    max-width: 100%;
+    border: 2px solid #2b2b2b;
+    border-radius: 30px;
+    margin: 30px 0 10px 0;
+  }
+  
+  h1 {
+    font-family: 'Montserrat';
+    font-size: 4.1rem;
+    margin: 0.2rem;
+    text-align: center;
+  }
+
+  h6 {
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    margin: 0.2rem;
+    text-align: center;
+  }
+
+  h2, a {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin: 0.2rem;
+    text-align: center;
+  }
+
+  a {
+    margin-top: 15px;
+  }
+
+  h5 {
+    font-family: 'Montserrat';
+    font-size: 2.1rem;
+    margin: 0.2rem;
+    text-align: center;
+  }
+
+  ul {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-family: 'Bebas Neue';
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row2 {
+    margin: auto;
+  }
+
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.4em;
+    text-align: left;
+    margin: 1.5rem
+  }
+
+  h7 {
+    margin: auto;
+    margin-top: 3vh;
+    font-size: 2rem;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+    padding: 10px;
+    margin-left: 1rem;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+
+  label, input {
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .u-full-width {
+    width: 30vh;
+    box-sizing: border-box; }
+  
+
+  @media only screen and (max-width: 500px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+      
+  h2 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+    margin: 2rem;
+    text-align: center;
+    padding: 10px;
+    line-height: 5rem;
+  }
+
+  h5, h4 {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  @media only screen and (min-width: 501px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+
+body {
+    background-color: #F6E6C0;
+}
